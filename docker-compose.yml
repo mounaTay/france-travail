@@ -1,0 +1,8 @@
+services:
+  france-travail-job:
+    build: .
+    container_name: france-travail-job
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
